@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Air Quality Checker</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+
+<body>
+    <h1>Air Quality Checker</h1>
+    <div class="input-container">
+        <form id="form">
+            <label for="latitude">latitude:</label>
+            <input type="text" id="latitude" placeholder="Enter Latitude">
+
+            <label for="longitude">longitude:</label>
+            <input type="text" id="longitude" placeholder="Enter a longitude">
+             <br/>
+
+            <button type="submit">Check Air Qualiy</button>
+        </form>
+        <div class="info" id="result-cont">
+            <h1 class="info-heading">Air Quality</h1>
+            <p class="info-data">AQI: <sapn id="aqi"></sapn></p>
+            <p class="info-data">CO: <sapn id="co"></sapn></p>
+            
+            <p class="info-data">PM10: <sapn id="pm10"></sapn></p>
+            <p class="info-data">SO2: <sapn id="so2"></sapn></p>
+        </div>
+    </div>
+    <script src="weather.js"></script>
+    
+</body>
+
+</html>
